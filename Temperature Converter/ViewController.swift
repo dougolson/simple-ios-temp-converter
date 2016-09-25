@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var tempText: UITextField!
     @IBOutlet weak var tempResult: UILabel!
     @IBOutlet weak var conversionType: UISegmentedControl!
+    @IBOutlet weak var conversionCounter: UILabel!
     
     var celsius = true
     var tempType = "Fahrenheit"
+    var conversionsMade = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,13 @@ class ViewController: UIViewController {
                 return
             }
             else{
+                conversionsMade += 1
+                if (conversionsMade == 1){
+                    conversionCounter.text = "\(conversionsMade) Conversion Made"
+                }
+                else {
+                    conversionCounter.text = "\(conversionsMade) Conversions Made"
+                }
                 if let num = Double(result) { // if result can be cast to Double
                     if(celsius) { // convert to F
                         let output = num * (9.0/5) + 32

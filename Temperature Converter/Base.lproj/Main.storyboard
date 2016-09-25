@@ -51,21 +51,28 @@
                                 <color key="textColor" red="0.1245015554298643" green="0.1245015554298643" blue="0.1245015554298643" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Conversions Made" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CH-gJ-ZtO">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.12898357557082346" green="0.15947919876763947" blue="0.17834535256410255" alpha="0.68957435344827589" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5175134564714573" green="0.63986930912937767" blue="0.71556490384615379" alpha="0.68957435344827589" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9ih-kA-EPX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-125" id="AZQ-V1-ljG"/>
+                            <constraint firstItem="9ih-kA-EPX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="AZQ-V1-ljG"/>
                             <constraint firstItem="9ih-kA-EPX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-33" id="ESK-ZP-kuv"/>
-                            <constraint firstItem="e7Q-ju-BVj" firstAttribute="trailing" secondItem="vbg-3g-UJM" secondAttribute="trailing" id="FLn-BJ-5Jh"/>
-                            <constraint firstItem="vbg-3g-UJM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-125" id="Ud7-Lo-mBC"/>
+                            <constraint firstItem="vbg-3g-UJM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="Ud7-Lo-mBC"/>
                             <constraint firstItem="NiA-98-Tes" firstAttribute="top" secondItem="9ih-kA-EPX" secondAttribute="bottom" constant="20" id="eyV-La-ChB"/>
-                            <constraint firstItem="e7Q-ju-BVj" firstAttribute="leading" secondItem="9ih-kA-EPX" secondAttribute="leading" id="nZa-eU-Vxd"/>
+                            <constraint firstItem="9ih-kA-EPX" firstAttribute="top" secondItem="8CH-gJ-ZtO" secondAttribute="bottom" constant="17.5" id="oec-DC-WsL"/>
+                            <constraint firstItem="e7Q-ju-BVj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rq8-ZG-rmC"/>
                             <constraint firstItem="e7Q-ju-BVj" firstAttribute="top" secondItem="NiA-98-Tes" secondAttribute="bottom" constant="20" id="ueK-9p-7Jx"/>
                             <constraint firstItem="vbg-3g-UJM" firstAttribute="leading" secondItem="9ih-kA-EPX" secondAttribute="trailing" constant="7.5" id="xvo-Rb-v8s"/>
                             <constraint firstItem="NiA-98-Tes" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yM3-Bf-Lpg"/>
+                            <constraint firstItem="8CH-gJ-ZtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1L-KG-OqK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="conversionCounter" destination="8CH-gJ-ZtO" id="Huh-U6-Mlm"/>
                         <outlet property="conversionType" destination="vbg-3g-UJM" id="U5D-ub-BsB"/>
                         <outlet property="tempResult" destination="e7Q-ju-BVj" id="6h4-aC-3Qc"/>
                         <outlet property="tempText" destination="9ih-kA-EPX" id="XL1-la-1Pb"/>
